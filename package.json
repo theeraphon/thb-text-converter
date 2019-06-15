@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A Node module to convert value of THB currency from number to text",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "test"
   },
   "repository": {
@@ -21,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/theeraphon/thb-text-converter/issues"
   },
-  "homepage": "https://github.com/theeraphon/thb-text-converter#readme"
+  "homepage": "https://github.com/theeraphon/thb-text-converter#readme",
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
 }
