@@ -40,7 +40,10 @@ const _isNumber = (str: string): boolean => {
     return !isNaN(parseFloat(str)) && isFinite(parseFloat(str));
   }
 
-export const convert = (valueInput: string):string => {
+
+
+class Converter {
+  public convert(valueInput: string):string {
     let value = _parseNumber(valueInput);
     let text = '';
     if (value !== undefined) {
@@ -61,4 +64,7 @@ export const convert = (valueInput: string):string => {
       }
     }
     return value !== undefined ? text : '';
+  }
 }
+
+export default new Converter();
